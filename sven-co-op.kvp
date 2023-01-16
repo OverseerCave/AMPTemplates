@@ -1,7 +1,7 @@
 App.AdminMethod=SourceRCON
 App.ApplicationPort1=27015
 App.ApplicationPort2=26900
-App.AdminLoginTransform=MD5
+App.AdminLoginTransform=MD5_Lower
 App.ApplicationReadyMode=RegexMatch
 App.BaseDirectory=./sven-co-op/276060/
 App.CommandLineArgs=-console +ip {{$ApplicationIPBinding}} -port {{$ApplicationPort1}} -sport {{$ApplicationPort2}} +rcon_password "{{$RemoteAdminPassword}}" {{$FormattedArgs}}
