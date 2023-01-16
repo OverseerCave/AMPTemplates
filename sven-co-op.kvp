@@ -1,6 +1,8 @@
-App.AdminMethod=STDIO
+App.AdminMethod=SourceRCON
 App.ApplicationPort1=27015
 App.ApplicationPort2=26900
+App.AdminLoginTransform=MD5
+App.RemoteAdminPort=27015
 App.ApplicationReadyMode=RegexMatch
 App.BaseDirectory=./sven-co-op/276060/
 App.CommandLineArgs=-console +ip {{$ApplicationIPBinding}} -port {{$ApplicationPort1}} -sport {{$ApplicationPort2}} +rcon_password "{{$RemoteAdminPassword}}" {{$FormattedArgs}}
@@ -18,6 +20,7 @@ App.RapidStartup=true
 App.RootDir=./sven-co-op/
 App.UpdateSource=Multi
 App.UpdateSources=[{"UpdateStageName": "SteamCMD Download","UpdateSourcePlatform": "All", "UpdateSource": "SteamCMD", "UpdateSourceData": "276060", "UpdateSourceArgs": "225840"}]
+App.UseRandomAdminPassword=true
 App.WorkingDir=276060
 Console.AppReadyRegex=^Connection to Steam servers successful.$
 Console.ThrowawayMessageRegex=
